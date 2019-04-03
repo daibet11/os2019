@@ -1,0 +1,32 @@
+Changing password for daibet11.
+(current) UNIX password: 
+Thứ tư, 03 Tháng 4 năm 2019 11:02:04 +07
+Dai-Lenovo-Legion-Y520-15IKBN
+x86_64
+Linux Dai-Lenovo-Legion-Y520-15IKBN 4.18.0-17-generic #18~18.04.1-Ubuntu SMP Fri Mar 15 15:27:12 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+[ 2382.040823] hid-generic 0003:1A81:2222.0005: input,hidraw0: USB HID v1.11 Keyboard [GamingMouse Gaming Mouse] on usb-0000:00:14.0-1/input0
+[ 2382.043662] input: GamingMouse Gaming Mouse Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.1/0003:1A81:2222.0006/input/input28
+[ 2382.044034] input: GamingMouse Gaming Mouse Consumer Control as /devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.1/0003:1A81:2222.0006/input/input29
+[ 2382.104425] input: GamingMouse Gaming Mouse System Control as /devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.1/0003:1A81:2222.0006/input/input30
+[ 2382.104541] input: GamingMouse Gaming Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.1/0003:1A81:2222.0006/input/input31
+[ 2382.104716] hid-generic 0003:1A81:2222.0006: input,hiddev0,hidraw1: USB HID v1.11 Mouse [GamingMouse Gaming Mouse] on usb-0000:00:14.0-1/input1
+[ 4237.759242] atkbd serio0: Unknown key pressed (translated set 2, code 0x6b on isa0060/serio0).
+[ 4237.759243] atkbd serio0: Use 'setkeycodes 6b <keycode>' to make it known.
+[ 4237.846188] atkbd serio0: Unknown key released (translated set 2, code 0x6b on isa0060/serio0).
+[ 4237.846190] atkbd serio0: Use 'setkeycodes 6b <keycode>' to make it known.
+ 11:05:42 up  1:17,  1 user,  load average: 0,85, 0,78, 0,57
+daibet11
+daibet11 :0           2019-04-03 09:49 (:0)
+uid=1000(daibet11) gid=1000(daibet11) groups=1000(daibet11),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),116(lpadmin),126(sambashare)
+daibet11 :0           :0               Wed Apr  3 09:49   still logged in
+reboot   system boot  4.18.0-17-generi Wed Apr  3 09:48   still running
+
+wtmp begins Wed Apr  3 09:48:31 2019
+daibet11 :0           :0               Wed Apr  3 09:49   still logged in
+reboot   system boot  4.18.0-17-generi Wed Apr  3 09:48   still running
+
+wtmp begins Wed Apr  3 09:48:31 2019
+ 11:07:52 up  1:19,  1 user,  load average: 0,99, 0,83, 0,61
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+daibet11 :0       :0               09:49   ?xdm?   1:10   0.00s /usr/lib/gdm3/g
+
