@@ -1,0 +1,22 @@
+daibet11@Dai-Lenovo-Legion-Y520-15IKBN:~$ ls -a | grep list
+daibet11@Dai-Lenovo-Legion-Y520-15IKBN:~$  wc -l /etc/passwd
+41 /etc/passwd
+daibet11@Dai-Lenovo-Legion-Y520-15IKBN:~$ free
+              total        used        free      shared  buff/cache   available
+Mem:        8039096     1392324     4895192      465056     1751580     5885976
+Swap:       7811068           0     7811068
+daibet11@Dai-Lenovo-Legion-Y520-15IKBN:~$ lscpu
+Architecture:        x86_64
+CPU op-mode(s):      32-bit, 64-bit
+Byte Order:          Little Endian
+CPU(s):              8
+On-line CPU(s) list: 0-7
+Thread(s) per core:  2
+Core(s) per socket:  4
+Socket(s):           1
+=>
+So my computer has 1 cpu socket
+CPU socket has 4 physical cores => the computer has 4 physical cores
+daibet11@Dai-Lenovo-Legion-Y520-15IKBN:~$ find /home/daibet11/Pictures -name "*.jpg" | wc -l
+0
+
