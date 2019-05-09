@@ -1,0 +1,68 @@
+List all running process:
+```console
+daibet11@Dai-Lenovo-Legion-Y520-15IKBN:~/os2019/os2019$ ps -ef | head
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  0 01:06 ?        00:00:04 /sbin/init splash
+root         2     0  0 01:06 ?        00:00:00 [kthreadd]
+root         4     2  0 01:06 ?        00:00:00 [kworker/0:0H]
+root         6     2  0 01:06 ?        00:00:00 [mm_percpu_wq]
+root         7     2  0 01:06 ?        00:00:00 [ksoftirqd/0]
+root         8     2  0 01:06 ?        00:00:09 [rcu_sched]
+root         9     2  0 01:06 ?        00:00:00 [rcu_bh]
+root        10     2  0 01:06 ?        00:00:00 [migration/0]
+root        11     2  0 01:06 ?        00:00:00 [watchdog/0]
+```
+Find gnome-calculator process id:
+```console
+daibet11@Dai-Lenovo-Legion-Y520-15IKBN:~/os2019/os2019$ ps -fC gnome-calculator | awk '{print $2}'
+PID
+7896
+```
+Show gnome-calculator process status:
+```console
+daibet11@Dai-Lenovo-Legion-Y520-15IKBN:~/os2019/os2019$ cat /proc/7896/status | head
+Name:	gnome-calculato
+Umask:	0002
+State:	S (sleeping)
+Tgid:	7896
+Ngid:	0
+Pid:	7896
+PPid:	1830
+TracerPid:	0
+Uid:	1000	1000	1000	1000
+Gid:	1000	1000	1000	1000
+```
+Pause gnome-calculator:
+```console
+daibet11@Dai-Lenovo-Legion-Y520-15IKBN:~/os2019/os2019$ kill -STOP 7896
+daibet11@Dai-Lenovo-Legion-Y520-15IKBN:~/os2019/os2019$ cat /proc/7896/status | head
+Name:	gnome-calculato
+Umask:	0002
+State:	T (stopped)
+Tgid:	7896
+Ngid:	0
+Pid:	7896
+PPid:	1830
+TracerPid:	0
+Uid:	1000	1000	1000	1000
+Gid:	1000	1000	1000	1000
+```
+Resume gnome-calculator:
+```console
+daibet11@Dai-Lenovo-Legion-Y520-15IKBN:~/os2019/os2019$ kill -CONT 7896
+daibet11@Dai-Lenovo-Legion-Y520-15IKBN:~/os2019/os2019$ cat /proc/7896/status | head
+Name:	gnome-calculato
+Umask:	0002
+State:	S (sleeping)
+Tgid:	7896
+Ngid:	0
+Pid:	7896
+PPid:	1830
+TracerPid:	0
+Uid:	1000	1000	1000	1000
+Gid:	1000	1000	1000	1000
+```
+Terminate gnome-calculator:
+```console
+daibet11@Dai-Lenovo-Legion-Y520-15IKBN:~/os2019/os2019$ kill -KILL 7896 
+```
