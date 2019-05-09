@@ -1,0 +1,6 @@
+daibet11@Dai-Lenovo-Legion-Y520-15IKBN:~$ ps -a | grep firefox
+ 1884 tty2     00:01:19 firefox
+daibet11@Dai-Lenovo-Legion-Y520-15IKBN:~$ ps -o nlwp 1884
+NLWP
+  73
+
